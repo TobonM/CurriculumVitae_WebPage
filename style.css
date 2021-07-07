@@ -1,0 +1,246 @@
+/* For mobile phones: */
+* {
+  box-sizing: border-box;
+  font-family: calibri;
+}
+
+h1, h2{
+  font-weight: normal;
+  text-align: center;
+  padding: 5px 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 33px;
+}
+
+p {
+  font-size: 17px;
+  margin: 0;
+  padding: 0 0 0 25px;
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+ul{
+  list-style: none;
+  margin: 15px 0 0 0;
+}
+
+.tiempo p{
+  font-weight: bold;
+  color: #445473;
+}
+
+.lugar{
+  color: #445473;
+}
+
+.lugar + p,
+.referencias p{
+  color: #69768F;
+}
+
+/******** ICONOS DATOS PERSONALES *********/
+.datoPersonal{
+  display: grid;
+  grid-template-columns: 30px auto;
+  grid-template-rows: 36px;
+}
+.icono{
+  grid-column: 1;
+}
+.dato{
+  grid-column: 2;
+}
+
+/******** ICONOS HABILIDADES *********/
+.habilidad{
+  display: grid;
+  grid-template-columns: 130px auto;
+  grid-template-rows: 25px;
+}
+.nombreHabilidad {
+  grid-column: 1 / 2;
+}
+.iconos {
+  grid-column: 2 / 3;
+}
+.iconos i{
+  padding: 3px;
+}
+/******** ICONOS IDIOMAS *********/
+.idioma{
+  display: grid;
+  grid-template-columns: 130px auto;
+}
+.nombreIdioma{
+  grid-column: 1;
+}
+.iconos{
+  grid-column: 2;
+}
+
+.intereses ul,
+.aptitudes ul{
+  list-style: square;
+  margin-left: 15px;
+}
+
+.fotografia,
+.datosPersonales,
+.habilidades,
+.idiomas,
+.intereses,
+.aptitudes{
+  padding-bottom: 20px;
+  background: #69768F;
+  color: white;
+}
+
+@media only screen and (min-width: 640px) {
+  h2 {
+    text-align: left;
+    padding-left: 35px;
+  }
+
+  .elementoFor{
+    display: grid;
+    grid-template-columns: 157px auto;
+    grid-auto-rows: auto;
+  }
+
+  .elementoExp{
+    display: grid;
+    grid-template-columns: 157px auto;
+    grid-template-rows: auto;
+  }
+
+  .elementoCur{
+    display: grid;
+    grid-template-columns: 157px auto;
+    grid-auto-rows: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .der h2{
+    margin: 10px 0;
+  }
+
+  .fotografia,
+  .datosPersonales,
+  .habilidades,
+  .idiomas,
+  .intereses,
+  .aptitudes{
+    width: 320px;
+    height: auto;
+    padding: 0;
+  }
+
+  .contenidoFormacion,
+  .contenidoExperiencia,
+  .contenidoExperiencia
+  .elementoFor,
+  .elementoExp,
+  .elementoCur,
+  .formacion,
+  .experiencia,
+  .cursos,
+  .referencias{
+    width: 600px;
+    height: auto;
+    margin: 0;
+  }
+
+  .cv{
+    display: grid;
+    grid-template-columns: 320px 640px;
+    justify-content: center;
+  }
+
+  .izq{
+    grid-column: 1;
+  }
+
+  .der{
+    grid-column: 2;
+    border: 1px solid gray;
+  }
+
+  .contenidoCursos p{
+    margin: 6px;
+  }
+
+  .formacion h2:after,
+  .experiencia h2:after,
+  .cursos h2:after,
+  .referencias h2:after{
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    width: 75%;
+    margin-left: 15px;
+    background-color: #d3d3d3;
+  }
+
+  .datosPersonales h2:after{
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    width: 30%;
+    margin-left: 15px;
+    background-color: white;
+  }
+
+  .habilidades h2::after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    width: 50%;
+    margin-left: 15px;
+    background-color: white;
+  }
+
+  .idiomas h2:after{
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    width: 63%;
+    margin-left: 15px;
+    background-color: white;
+  }
+
+  .intereses h2:after{
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    width: 20%;
+    margin-left: 15px;
+    background-color: white;
+  }
+
+  .aptitudes h2:after{
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    width: 55%;
+    margin-left: 15px;
+    background-color: white;
+  }
+
+}
